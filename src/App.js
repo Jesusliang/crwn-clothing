@@ -22,11 +22,16 @@ function App() {
           });
         });
       }
+      setCurrentUser(userAuth);
     });
     return () => {
-      unsubscribeFromAuth();
+      unsubscribeFromAuth = null;
     };
   }, []);
+
+  useEffect(() => {
+    console.log(currentUser);
+  }, [currentUser]);
 
   return (
     <div>
