@@ -60,7 +60,7 @@ const Signin = (props) => {
         />
         <div className="buttons">
           <CustomButton type="submit">SIGN IN</CustomButton>
-          <CustomButton style="google-sign-in" onClick={signInWithGoogle}>
+          <CustomButton styleType="google-sign-in" onClick={signInWithGoogle}>
             {" "}
             Sign in with Google{" "}
           </CustomButton>

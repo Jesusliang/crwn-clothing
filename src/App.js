@@ -29,7 +29,7 @@ function App(props) {
     return () => {
       unsubscribeFromAuth();
     };
-  }, []);
+  }, [setCurrentUser]);
 
   return (
     <div>

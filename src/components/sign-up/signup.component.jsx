@@ -26,7 +26,7 @@ const SignUp = () => {
         signUpData.email,
         signUpData.password
       );
-      const { displayName, email, password, confirmPassword } = signUpData;
+      const { displayName } = signUpData;
       await createUserProfileDocument(user, { displayName });
       setSignUpData({
         displayName: "",

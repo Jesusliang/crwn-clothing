@@ -3,7 +3,7 @@ import CollectionPreview from "../../components/collection-preview/collection-pr
 import SHOP_DATA from "./shop.data";
 
 const ShopPage = () => {
-  const [collectionsState, setCollectionsState] = useState({
+  const [collectionsState] = useState({
     collection: SHOP_DATA,
   });
 
